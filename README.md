@@ -5,7 +5,7 @@
 ## 🚀 라이브 데모
 **[https://senior-fronend-assignment.vercel.app/](https://senior-fronend-assignment.vercel.app/)**
 
-실제 동작하는 애플리케이션을 직접 체험해보세요!
+실제 동작하는 애플리케이션을 직접 체험해보실 수 있습니다.
 
 **📺 과제 설명 영상: [YouTube에서 보기](https://www.youtube.com/watch?v=fi1SZugx8L4)**
 
