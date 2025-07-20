@@ -1,6 +1,6 @@
 # NextChapter WorkAI
 
-![AI Chat Interface](public/thumb.png)
+![AI Chat Interface](./packages/web-ui/public/thumb.png)
 
 ## 🚀 라이브 데모
 **[https://senior-fronend-assignment.vercel.app/](https://senior-fronend-assignment.vercel.app/)**
