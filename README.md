@@ -246,9 +246,8 @@ pnpm test:coverage
 - **Cumulative Layout Shift**: 0 (레이아웃 이동 없음 - 완벽!)
 - **Speed Index**: 1.0s
 
-### 해결한 기술적 도전
+### 해결한 기술
 - **스트리밍 중 컴포넌트 언마운트**: AbortController와 cleanup 함수로 메모리 누수 방지
-- **오프라인 큐 동기화**: 고유 ID 기반 중복 제거 및 상태 동기화
 - **대용량 메시지 렌더링**: 가상화와 동적 높이 계산으로 성능 최적화
 - **XSS 방지**: DOMPurify를 활용한 안전한 HTML 렌더링
 
