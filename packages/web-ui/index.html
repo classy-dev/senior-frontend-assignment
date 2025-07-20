@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI 채팅 인터페이스 - 시니어 프론트엔드 과제" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- PWA Meta Tags for iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="AI Chat" />
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="AI Chat Interface" />
+    <meta property="og:description" content="AI 채팅 인터페이스 - 시니어 프론트엔드 과제" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://api.openai.com" />
+    <link rel="dns-prefetch" href="https://api.openai.com" />
+    
+    <!-- 폰트 프리로드 -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" as="style" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    
+    <title>AI Chat Interface</title>
+    <script>
+      // 테마 플래시 방지를 위한 즉시 실행 스크립트
+      (function() {
+        try {
+          const darkMode = localStorage.getItem('darkMode');
+          if (darkMode === 'true') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          // localStorage가 사용 불가능한 경우 무시
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading state while React initializes -->
+      <div class="loading-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div style="text-align: center;">
+          <div class="spinner" style="width: 40px; height: 40px; border: 3px solid; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
+          <p class="loading-text" style="margin-top: 16px; font-family: system-ui, -apple-system, sans-serif;">로딩 중...</p>
+        </div>
+      </div>
+      <style>
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+        
+        /* Light mode (default) */
+        .loading-container {
+          background-color: #f9fafb;
+        }
+        .spinner {
+          border-color: #e5e7eb;
+          border-top-color: #3b82f6;
+        }
+        .loading-text {
+          color: #6b7280;
+        }
+        
+        /* Dark mode */
+        .dark .loading-container {
+          background-color: #111827;
+        }
+        .dark .spinner {
+          border-color: #374151;
+          border-top-color: #60a5fa;
+        }
+        .dark .loading-text {
+          color: #9ca3af;
+        }
+      </style>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

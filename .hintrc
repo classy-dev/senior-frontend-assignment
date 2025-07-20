@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/aria": "off",
+    "compat-api/css": "off",
+    "axe/name-role-value": "off",
+    "apple-touch-icons": "off"
+  }
+}

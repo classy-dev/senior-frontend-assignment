@@ -1,0 +1,71 @@
+/* Prose dark mode overrides */
+.prose-custom {
+  color: #374151; /* gray-700 */
+}
+
+.dark .prose-custom {
+  color: #e5e7eb; /* gray-200 */
+}
+
+.prose-custom h1,
+.prose-custom h2,
+.prose-custom h3,
+.prose-custom h4,
+.prose-custom h5,
+.prose-custom h6,
+.prose-custom strong {
+  color: #111827; /* gray-900 */
+}
+
+.dark .prose-custom h1,
+.dark .prose-custom h2,
+.dark .prose-custom h3,
+.dark .prose-custom h4,
+.dark .prose-custom h5,
+.dark .prose-custom h6,
+.dark .prose-custom strong {
+  color: #f3f4f6; /* gray-100 */
+}
+
+.prose-custom ul > li::marker,
+.prose-custom ol > li::marker {
+  color: #111827; /* gray-900 */
+}
+
+.dark .prose-custom ul > li::marker,
+.dark .prose-custom ol > li::marker {
+  color: #f3f4f6; /* gray-100 */
+}
+
+.prose-custom blockquote {
+  color: #4b5563; /* gray-600 */
+}
+
+.dark .prose-custom blockquote {
+  color: #d1d5db; /* gray-300 */
+}
+
+.prose-custom a {
+  color: #2563eb; /* blue-600 */
+}
+
+.dark .prose-custom a {
+  color: #60a5fa; /* blue-400 */
+}
+
+.prose-custom code {
+  color: #1f2937; /* gray-800 */
+}
+
+.dark .prose-custom code {
+  color: #e5e7eb; /* gray-200 */
+}
+
+.prose-custom pre {
+  background-color: #111827; /* gray-900 */
+  color: #e5e7eb; /* gray-200 */
+}
+
+.dark .prose-custom pre {
+  background-color: #1f2937; /* gray-800 */
+}

@@ -1,0 +1,20 @@
+{
+  "name": "senior-frontend-assignment",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter web-ui dev",
+    "dev:vite": "npx --filter web-ui vite",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "typescript": "^5.5.0"
+  },
+  "packageManager": "pnpm@10.12.1"
+}
