@@ -7,6 +7,10 @@
 
 실제 동작하는 애플리케이션을 직접 체험해보세요!
 
+**📺 과제 설명 영상: [YouTube에서 보기](https://www.youtube.com/watch?v=fi1SZugx8L4)**
+
+필수구현과제와 도전과제에 대한 설명 및 데모 영상입니다.
+
 
 ## 프로젝트 개요
 
@@ -193,7 +197,7 @@ packages/web-ui/
 
 ```bash
 # 저장소 클론
-git clone [repository-url]
+git clone https://github.com/classy-dev/senior-frontend-assignment
 cd senior-frontend-assignment
 
 # 의존성 설치
